@@ -11,7 +11,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import Menu from '../components/menu/menu'
+import MainMenu from '../components/menu/menu'
 import Copyright from '../components/copyrigth/copy'
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Menu />
+      <MainMenu />
       <main>
         {/* Hero unit */}
         <Box
@@ -40,12 +40,10 @@ export default function Home() {
               color="text.primary"
               gutterBottom
             >
-              Album layout
+              El Encanto
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Something short and leading about the collection below—its contents,
-              the creator, etc. Make it short and sweet, but not too short so folks
-              don&apos;t simply skip over it entirely.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti consectetur nesciunt commodi, adipisci asperiores iure facere deleniti debitis quidem facilis pariatur nostrum vitae neque. Laborum id deserunt ex nam.
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -53,8 +51,8 @@ export default function Home() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
+              <Button variant="contained">Accion 1</Button>
+              <Button variant="outlined">Accion 2</Button>
             </Stack>
           </Container>
         </Box>
@@ -70,23 +68,21 @@ export default function Home() {
                     component="img"
                     sx={{
                       // 16:9
-                      pt: '56.25%',
+                      pt: '10%',
                     }}
                     image="https://source.unsplash.com/random"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Proyecto ejemplo
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      Esta es una descripcion de ejemplo
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="small">Ver Proyecto</Button>
                   </CardActions>
                 </Card>
               </Grid>
@@ -105,7 +101,7 @@ export default function Home() {
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+        Esto es un pie de página
         </Typography>
         <Copyright />
       </Box>

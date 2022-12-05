@@ -5,12 +5,12 @@ import Typography from '@mui/material/Typography';
 export default function Copyright() {
     return (
       <Typography variant="body2" color="text.secondary" align="center">
-        {'Copyright © '}
+        {'Todos los detechos reservador © '}
         <Link color="inherit" href="https://mui.com/">
-          Your Website
+          El Encanto 
         </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
+        {new Date().getFullYear() + ' '}
+        - Powered By Zamtos Tech {'.'}
       </Typography>
     );
   }
