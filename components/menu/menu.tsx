@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 
 import Toolbar from '@mui/material/Toolbar';
@@ -11,7 +11,7 @@ import { Container } from '@mui/system';
 
 export default function MainMenu() {
 
-  const pages = ['Opcion 1', 'Opcion 2', 'Opcion 3'];
+  const pages = ['inicio', 'Proyectos', 'Contactanos'];
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
