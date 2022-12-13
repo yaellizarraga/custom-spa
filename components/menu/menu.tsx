@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import AdbIcon from '@mui/icons-material/Adb';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
-import { Box, IconButton, MenuItem, Button } from '@mui/material';
+import { Box, IconButton, MenuItem, Button, createTheme } from '@mui/material';
 import { Container } from '@mui/system';
 
 export default function MainMenu() {
@@ -27,7 +27,7 @@ export default function MainMenu() {
       <AppBar position="relative" color='default'>
         <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
+        <Typography
             variant="h6"
             noWrap
             component="a"
@@ -35,14 +35,11 @@ export default function MainMenu() {
             sx={{
             mr: 2,
             display: { xs: 'none', md: 'flex' },
-            fontFamily: 'monospace',
-            fontWeight: 700,
             letterSpacing: '.3rem',
-            color: '#FFE15D',
             textDecoration: 'none',
           }}
           >
-            LOGO
+            <img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto' />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -80,7 +77,6 @@ export default function MainMenu() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
@@ -97,7 +93,7 @@ export default function MainMenu() {
                 textDecoration: 'none',
               }}
             >
-              LOGO
+              <img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto' />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
@@ -105,7 +101,7 @@ export default function MainMenu() {
                   key={page}
                   onClick={handleCloseNavMenu}
                   style={{ fontSize: '12pt', fontWeight: '700' }}
-                  sx={{ my: 2, color: '#FFE15D', display: 'block'}}
+                  sx={{ my: 2, color: '#9f9931', display: 'block'}}
                 >
                   {page}
                 </Button>

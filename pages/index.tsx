@@ -6,15 +6,26 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import CssBaseline from '@mui/material/CssBaseline'
 import Grid from '@mui/material/Grid'
-import Stack from '@mui/material/Stack'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import MainMenu from '../components/menu/menu'
 import Copyright from '../components/copyrigth/copy'
+import Carousel from 'react-material-ui-carousel'
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+var items = [
+  {
+      src: "/business_center.png",
+      alt: "Imagen 1"
+  },
+  {
+      src: "/club_golf.jpg",
+      alt: "Imagen 2"
+  }
+]
 
 const theme = createTheme();
 
@@ -25,36 +36,16 @@ export default function Home() {
       <MainMenu />
       <main>
         {/* Hero unit */}
-        <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pt: 8,
-            pb: 6,
-          }}
-        >
-          <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h2"
-              align="center"
-              color="text.primary"
-              gutterBottom
-            >
-              El Encanto
-            </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti consectetur nesciunt commodi, adipisci asperiores iure facere deleniti debitis quidem facilis pariatur nostrum vitae neque. Laborum id deserunt ex nam.
-            </Typography>
-            <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-              <Button variant="contained">Accion 1</Button>
-              <Button variant="outlined">Accion 2</Button>
-            </Stack>
-          </Container>
+        <Box>
+          <Carousel>
+            {
+              items.map(item => (
+                <div className={'image-container'}>
+                  <img src={item.src} alt={item.alt} className={'image'} />
+                </div>
+              ))
+            }
+          </Carousel>
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}

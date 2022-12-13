@@ -15,6 +15,27 @@ a {
   box-sizing: border-box;
 }
 
+.image-container {
+  width: 100%;
+  height: auto;
+}
+
+.image-container > div {
+    position: unset !important;
+}
+
+.image-container > .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.logo-encanto {
+  max-height: 55px;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
