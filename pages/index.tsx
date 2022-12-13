@@ -19,11 +19,13 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var items = [
   {
       src: "/business_center.png",
-      alt: "Imagen 1"
+      alt: "Imagen 1",
+      key:1
   },
   {
       src: "/club_golf.jpg",
-      alt: "Imagen 2"
+      alt: "Imagen 2",
+      key: 2
   }
 ]
 
@@ -40,7 +42,7 @@ export default function Home() {
           <Carousel>
             {
               items.map(item => (
-                <div className={'image-container'}>
+                <div className={'image-container'} key={item.key}>
                   <img src={item.src} alt={item.alt} className={'image'} />
                 </div>
               ))
