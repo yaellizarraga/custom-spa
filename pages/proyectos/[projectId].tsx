@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Box, Container, createTheme, Grid, Paper, styled, ThemeProvider, Typography } from '@mui/material';
-import MainMenu from '../../components/menu/menu';
-import Copyright from '../../components/copyrigth/copy';
+import * as React from 'react'
+import { Box, Container, createTheme, Grid, Paper, styled, ThemeProvider, Typography } from '@mui/material'
+import MainMenu from '../../components/menu/menu'
+import Footer from '../../components/footer/footer'
 import CssBaseline from '@mui/material/CssBaseline'
 
-export default function ProjectDetail() {
+export default function Project() {
     const theme = createTheme();
     const Item = styled(Box)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -42,6 +42,7 @@ export default function ProjectDetail() {
                     </Grid>
                 </Container>
             </main>
+            <Footer />
         </ThemeProvider>
     );
 }

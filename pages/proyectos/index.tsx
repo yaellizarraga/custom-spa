@@ -3,7 +3,8 @@ import { Box, Container, createTheme, Grid, Paper, styled, ThemeProvider, Typogr
 import MainMenu from '../../components/menu/menu';
 import CssBaseline from '@mui/material/CssBaseline'
 
-export default function ProjectDetail() {
+export default function Projects() {
+
     const theme = createTheme();
     const Item = styled(Box)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
