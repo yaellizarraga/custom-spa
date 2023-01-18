@@ -8,10 +8,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import { Box, IconButton, MenuItem, Button, createTheme } from '@mui/material';
 import { Container } from '@mui/system';
+import Link from 'next/link';
 
 export default function MainMenu() {
 
-  const pages = ['inicio', 'Proyectos', 'Contactanos'];
+  const pages = [
+    {text: 'inicio', route: '/' }, 
+    {text: 'Proyectos', route: '/proyectos' }, 
+    {text: 'Contactanos', route: '/contacto' }];
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
@@ -70,9 +74,9 @@ export default function MainMenu() {
                 display: { xs: 'block', md: 'none' },
               }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center" variant='h3'>{page}</Typography>
+                {pages.map((page, index) => (
+                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                    <Link href={ page.route }><Typography textAlign="center" variant='h3'>{ page.text }</Typography></Link>
                   </MenuItem>
                 ))}
               </Menu>
@@ -96,15 +100,17 @@ export default function MainMenu() {
               <img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto' />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  style={{ fontSize: '12pt', fontWeight: '700' }}
-                  sx={{ my: 2, color: '#9f9931', display: 'block'}}
-                >
-                  {page}
-                </Button>
+              {pages.map((page, index) => (
+                <Link href={page.route}>
+                  <Button
+                    key={index}
+                    onClick={handleCloseNavMenu}
+                    style={{ fontSize: '12pt', fontWeight: '700' }}
+                    sx={{ my: 2, color: '#9f9931', display: 'block'}}
+                  >
+                    {page.text}
+                  </Button>
+                </Link>
               ))}
             </Box>
           </Toolbar>

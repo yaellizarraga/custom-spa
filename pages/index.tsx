@@ -15,8 +15,9 @@ import Footer from '../components/footer/footer'
 import Carousel from 'react-material-ui-carousel'
 import Proyects from './api/data'
 import { Fade } from 'react-awesome-reveal'
+import { useRouter } from 'next/router'
 
-var items = [
+const items = [
   {
       src: "/business_center.png",
       alt: "Imagen 1",
@@ -32,6 +33,13 @@ var items = [
 const theme = createTheme();
 
 export default function Home() {
+
+  const router = useRouter();
+
+  const goToProject = (id: number) => {
+    router.push('/proyectos/' + id.toString())
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -68,16 +76,16 @@ export default function Home() {
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      <p>{proyect.title}</p>
+                      {proyect.title}
                     </Typography>
                     <Typography>
                       <Fade>
-                        {proyect.shortDescription}
+                          {proyect.shortDescription}
                       </Fade>
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">Ver Proyecto</Button>
+                    <Button size="small" onClick={() => goToProject(proyect.id)}>Ver Proyecto</Button>
                   </CardActions>
                 </Card>
               </Grid>
