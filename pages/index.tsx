@@ -49,8 +49,8 @@ export default function Home() {
         <Box>
           <Carousel>
             {
-              items.map(item => (
-                <div className={'image-container'} key={item.key}>
+              items.map((item, index) => (
+                <div className={'image-container'} key={index}>
                   <img src={item.src} alt={item.alt} className={'image'} />
                 </div>
               ))
@@ -60,8 +60,8 @@ export default function Home() {
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {Proyects.map((proyect) => (
-              <Grid item key={proyect.id} xs={12} sm={6} md={4}>
+            {Proyects.map((proyect, index) => (
+              <Grid item key={index} xs={12} sm={6} md={4}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
