@@ -70,11 +70,13 @@ export default function Project() {
                                     </Typography>
                                 </Grid>
                             </Grid>
-                            <Grid container spacing={4} pb={5} pt={5}>
-                                <Grid item md={12} sm={12}>
-                                    <iframe style={{ width: '100%' }} src={project.googleMaps}></iframe>
-                                </Grid>
-                            </Grid>
+                            {project.googleMaps ?
+                                <Grid container spacing={4} pb={5} pt={5}>
+                                    <Grid item md={12} sm={12}>
+                                        <iframe src={project.googleMaps}  style={{ width: '100%', height: '80vh' }} loading="lazy"></iframe>
+                                    </Grid>
+                                </Grid> : <div></div>
+                            }
                         </Grid> 
                     </Grid>: <div></div>}
                 </Container>

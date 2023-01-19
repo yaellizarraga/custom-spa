@@ -10,7 +10,7 @@ DISEÑADO CON UN ESTILO MINIMALISTA Y MODERNO, INTEGRANDO DETALLES EN HERRERIA, 
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'PLAZA CON 30 LOCALES COMERCIALES DE 60 M2 Y 40 M2, CON ELEVADOR PANORAMICO, ESCALERAS Y UN ESPACIO DE ESTACIONAMIENTO...',
         direccion: 'AV. LA MARINA LOTE #10 S/N.',
-        googleMaps: 'https://maps.app.goo.gl/YMGNyBXZVBwwEuk38'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674111425859!6m8!1m7!1sCAoSLEFGMVFpcE1ORExkZlRQNXZPZVE0YnpPNUg3aTBqY0tPRTdlWlBPR0IyRTAx!2m2!1d23.272359704634!2d-106.44652836062!3f54.26!4f-25.47!5f0.7820865974627469'
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ ESTRUCTURADO DE LOSA DE CONCRETO ARMADO, MUROS DE BLOCK Y ACABADOS EN YESO Y EST
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'DESARROLLO DE 2 EDIFICIOS DE DEPARTAMENTOS SUBDIVIDIDOS EN 2 ETAPAS...',
         direccion: 'AV. DEL DELFIN, LOTE 12, FRACCIONAMIENTO LA MARINA, MAZATLÁN, SINALOA.',
-        googleMaps: 'https://maps.app.goo.gl/KNSQKnhGiknjvsGX7'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674111105938!6m8!1m7!1sCAoSLEFGMVFpcE1ORExkZlRQNXZPZVE0YnpPNUg3aTBqY0tPRTdlWlBPR0IyRTAx!2m2!1d23.272359704634!2d-106.44652836062!3f141.08738479852423!4f0.06663977614816474!5f0.7820865974627469'
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ CUENTA CON ELEDOR PARA EL COMPLEJO.`,
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'EDIFICIO DE DEPARTAMENTOS QUE CONSTA DE 6 NIVELES, 3 DEPARTAMENTOS EN DISTRIBUIDOS DE PRIMER A TERCER PISO CADA UNO DANDO UN TOTAL DE 12 DEPARTAMENTOS DE 3 TIPOS DESDE LOS 70 M2. CUENTA CON AMPLIO ESPACIO DE ROOF GARDEN CON ALBERCA, EQUIPAMIENTO DE GIMNASIO, ASADORES Y AREA SOCIAL, ASI COMO ESTACIONAMIENTO TECHADO EN PLANTA BAJA Y SERVICIO DE ELEVADOR...',
         direccion: 'CALLE JUSTO SIERRA #17 LOS GIRASOLES',
-        googleMaps: 'https://maps.app.goo.gl/UqRgH6z6sRCgZw146'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674111644539!6m8!1m7!1sCAoSLEFGMVFpcE9BNlFUbTZhSlVkRkQyVi0wT2dqZHotVlN4YWFXTENyTWhKa2Y1!2m2!1d23.234842924611!2d-106.43182435324!3f240.58!4f15.159999999999997!5f0.7820865974627469'
     },
     {
         id: 4,
@@ -48,7 +48,7 @@ ESTRUCTURADO DE LOSA DE CONCRETO ARMADO, MUROS DE BLOCK Y ACABADOS EN YESO Y EST
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'EDIFICIO VERTICAL DE 26 NIVELES CON 126 DEPARTAMENTOS DE 6 TIPOS, QUE VAN DESDE LOS 53.4 M2 DEL TIPO LOFT HASTA AMPLIOS PENTHOUSE EN LOS ULTIMOS NIVELES...',
         direccion: 'AV. DEL MAR 565, TELLERIA, 82017 MAZATLÁN, SINALOA',
-        googleMaps: 'https://maps.app.goo.gl/LuTxeZ8ZeqbSrJ7r6'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674111703158!6m8!1m7!1sCAoSLEFGMVFpcE1jZjlRNHFUcmdBejU3b3p6WllJWExyOF9FeXl5SjVyeWNsdmlY!2m2!1d23.225319718769!2d-106.42669097726!3f47.614543993932465!4f-13.482561354334607!5f0.723607369380582'
     },
     {
         id: 5,
@@ -58,7 +58,7 @@ LA PLAZA COMERCIAL ESTA DISEÑADA CON UN ESTILO FUNCIONALISTA Y MODERNO, INTEGRA
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'PLAZA DE USO COMERCIAL CONSTA DE 3 NIVELES DE LOCALES, DANDO UN TOTAL DE 90 LOCALES QUE VAN DESDE LOS 60 M2...',
         direccion: 'ESQUINA CON AV. LA MARINA Y PASEO EL ATLANTICO MANZANA 17 LOTE 2-CC2 / 2A-CC2',
-        googleMaps: 'https://maps.app.goo.gl/t7F1Z2QcLGdPbMJ78'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674111973294!6m8!1m7!1sCAoSLEFGMVFpcE1TNDVXandUOWNxbmhUNE5KUTVkel9QVEwxZ2syd2xmMzVVckxt!2m2!1d23.273694955472!2d-106.44638627397!3f332.3641052246094!4f0!5f0.7820865974627469'
     },
     {
         id: 6,
@@ -68,7 +68,7 @@ TERRAZAS PANORAMICAS Y VISTAS HACIA EL MAR`,
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'EDIFICIO DE DEPARTAMENTOS CON 7 NIVELES, 2 DEPARTAMENTOS POR NIVEL DANDO UN TOTAL DE 14 DEPARTAMENTOS...',
         direccion: 'CALLE CAMINO AL OBSERVATORIO, CERRO DEL VIGIA MAZATLAN, SINALOA.',
-        googleMaps: 'https://maps.app.goo.gl/dTxvX3WRNBCSZnFK7'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674112038805!6m8!1m7!1sCAoSLEFGMVFpcE5BTTQ3RHZSa0VHVy1LbWdNSVNpU2VhM29xOVliTGZnbXVnSTNS!2m2!1d23.192141658392!2d-106.42598180109!3f159.95745193757384!4f1.155728658163909!5f0.4003161831622405'
     },
     {
         id: 7,
@@ -79,7 +79,7 @@ EL ENCANTO TOREO ESTA DISEÑADO CON UN ESTILO FUNCIONALISTA Y MODERNO, INTEGRAND
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'PLAZA DE USO COMERCIAL QUE CONSTA DE #64 LOCALES DISTRIBUIDOS EN NIVEL PLANTA BAJA, NIVEL 1, NIVEL 2, Y NIVEL 3, ASÍ COMO UN ROOF GARDEN PARA LA TORRE DE DEPARTAMENTOS...',
         direccion: 'AV. RAFAEL BUELNA S/N FRACCIONAMIENTO LA ALAMEDA C.P. 82123',
-        googleMaps: 'https://maps.app.goo.gl/NsU89JWbXapWUf4H8'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674112354543!6m8!1m7!1sCAoSLEFGMVFpcE5nQkgwWVN5cnRXZnRpWlc4MWNGMEd3Q1ljSkpFR0w2TU1BclVJ!2m2!1d23.245613888889!2d-106.4384!3f127.07!4f-25.42!5f0.7820865974627469'
     },
     {
         id: 8,
@@ -90,7 +90,7 @@ EL ENCANTO CLUB DE YATES CUENTA CON UN ESTILO MODERNO Y FUNCIONALISTA, CON UN DI
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'EDIFICIO HABITACIONAL DE 5 NIVELES QUE CUENTA CON 65 UNIDADES DE DEPARTAMENTOS QUE VAN DESDE LOS 70.00 M2 HASTA LOS 184.00 M2, INTEGRANDO BALCONES, AMPLIAS TERRAZAS, ASI COMO VISTAS HACIA LOS MUELLES DE MARINA MAZATLÁN...',
         direccion: 'CALLE C. CORAL SUR / PRIVADA CORAL SUR, ISLA MARINA MAZATLÁN, MAZATLÁN SINALOA.',
-        googleMaps: 'https://maps.app.goo.gl/3wEzmCP1ez9QzFsDA'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674112392166!6m8!1m7!1sCAoSLEFGMVFpcE9oZ0FMSEgwa2VEOWRKUkhQbHlQeVdNOTNrVGhYdkhlM1pTUGVx!2m2!1d23.270056252151!2d-106.45740593469!3f24.57!4f-4.290000000000006!5f0.7820865974627469'
     },
     {
         id: 9,
@@ -102,7 +102,7 @@ EL ENCANTO DE LAS LOMAS CUENTA CON UN ESTILO MODERNO Y FUNCIONALISTA, INTEGRANDO
         img: ['https://source.unsplash.com/random', 'https://source.unsplash.com/random', 'https://source.unsplash.com/random'],
         shortDescription: 'EDIFICIO HABITACIONAL DE 4 NIVELES QUE CUENTA CON 12 UNIDADES DE DEPARTAMENTOS, INTEGRANDO 4 DEPARTAMENTOS POR NIVEL...',
         direcion: 'CERRO DE CONEJOS #233, FRACCIONAMIENTO LOMAS DE MAZATLÁN C.P. 82110',
-        googleMaps: 'https://maps.app.goo.gl/FNnMyHym5ormk8iK8'
+        googleMaps: 'https://www.google.com/maps/embed?pb=!4v1674112549524!6m8!1m7!1sWoIdoQAK3QTQdwA7LrdhRA!2m2!1d23.24513557695928!2d-106.4417348774726!3f329.1911425360087!4f-21.136722618463224!5f0.49548432280406524'
     },
     {
         id: 10,
