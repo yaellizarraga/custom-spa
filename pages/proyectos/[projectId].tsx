@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Box, Container, createTheme, Grid, Paper, styled, ThemeProvider, Typography } from '@mui/material'
+import { Box, Container, createTheme, Grid, ThemeProvider, Typography } from '@mui/material'
 import MainMenu from '../../components/menu/menu'
 import Footer from '../../components/footer/footer'
 import CssBaseline from '@mui/material/CssBaseline'

@@ -16,6 +16,7 @@ import Carousel from 'react-material-ui-carousel'
 import Proyects from './api/data'
 import { Fade } from 'react-awesome-reveal'
 import { useRouter } from 'next/router'
+import Contact from '../components/contactForm/contact'
 
 const items = [
   {
@@ -59,7 +60,7 @@ export default function Home() {
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Grid container spacing={4} mb={5}>
             {Proyects.map((proyect, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
                 <Card
@@ -91,6 +92,7 @@ export default function Home() {
               </Grid>
             ))}
           </Grid>
+          <Contact />
         </Container>
       </main>
       <Footer />
