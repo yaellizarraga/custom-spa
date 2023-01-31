@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 
 export default function Copyright() {
     return (
-      <Typography variant="body2" color="text.secondary" align="center">
+      <Typography variant="body2" color="white" align="center">
         {'Todos los detechos reservador © '}
         <Link color="inherit" href="https://mui.com/">
           El Encanto 

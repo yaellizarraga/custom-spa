@@ -5,11 +5,11 @@ import Copyright from '../copyrigth/copy';
 
 export default function Footer() {
     return (
-        <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+        <Box sx={{ bgcolor: '#262627', p: 6 }} component="footer" mt={7}>
             <Typography
             variant="subtitle1"
             align="center"
-            color="text.secondary"
+            color="white"
             component="p"
             >
             Esto es un pie de página

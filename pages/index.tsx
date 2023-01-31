@@ -1,22 +1,14 @@
 import * as React from 'react'
-import Button from '@mui/material/Button'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
 import CssBaseline from '@mui/material/CssBaseline'
-import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Container from '@mui/material/Container'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import MainMenu from '../components/menu/menu'
 import Footer from '../components/footer/footer'
 import Carousel from 'react-material-ui-carousel'
-import Proyects from './api/data'
-import { Fade } from 'react-awesome-reveal'
-import { useRouter } from 'next/router'
 import Contact from '../components/contactForm/contact'
+import Projects from '../components/projects/projects'
+import { Container } from '@mui/system'
+import { Grid, Typography } from '@mui/material'
 
 const items = [
   {
@@ -35,12 +27,6 @@ const theme = createTheme();
 
 export default function Home() {
 
-  const router = useRouter();
-
-  const goToProject = (id: number) => {
-    router.push('/proyectos/' + id.toString())
-  }
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -58,43 +44,37 @@ export default function Home() {
             }
           </Carousel>
         </Box>
-        <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4} mb={5}>
-            {Proyects.map((proyect, index) => (
-              <Grid item key={index} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '10%',
-                    }}
-                    image="https://source.unsplash.com/random"
-                    alt="random"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {proyect.title}
+        <Container disableGutters>
+            <Grid container direction='row' mb={7} mt={7}>
+                <Grid item md={12}>
+                    <Typography variant='h1' align='center'>
+                        Acerca de nosotros
                     </Typography>
-                    <Typography>
-                      <Fade>
-                          {proyect.shortDescription}
-                      </Fade>
+                </Grid>
+            </Grid>
+            <Grid container direction='row' mb={7}>
+                <Grid item md={12}>
+                    <Typography variant='body1'>
+                      MR EXPERTOS EN PROYECTOS es líder en el desarrollo de la construcción y es una rama del grupo MR, formado originalmente en 2007 en la Ciudad de México. Nuestro grupo se dedica a la consultoría y desarrollo de proyectos integrales de construcción para el bienestar social y ambiental de la comunidad, desde el diseño hasta la construcción, contando con especialistas en cada una de sus áreas. Los desarrollos El Encanto es la unidad de negocio donde se comercializan los productos construidos por los expertos en proyectos de MR, junto a nuestro sector de desarrollo estamos generando un excelente ambiente para la inversión debido a nuestro compromiso con un producto terminado de alta calidad y servicio al cliente. Nos enorgullecemos de entregar con seguridad y credibilidad, un producto terminado, en o antes de nuestra fecha de finalización. Seguiremos incrementando la presencia de nuestra infraestructura y proyectos en la maravillosa ciudad de Mazatlán, Sinaloa.
                     </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" onClick={() => goToProject(proyect.id)}>Ver Proyecto</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-          <Contact />
+                    <Typography variant='caption'>
+                      English below
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Grid container direction='row'>
+                <Grid item md={12}>
+                    <Typography variant='body1'>
+                      MR EXPERTS IN PROJECTS is a leader in construction development and is a branch of the MR group, originally formed in 2007 in Mexico City. Our group is dedicated to consulting and developing comprehensive construction projects for the social and environmental well-being of the community, from design to construction, with specialists in each of its areas. El Encanto (The Charm) developments is the business unit where the products built by MR project experts are marketed. together with our development sector we are generating an excellent environment for investment due to our commitment to a high quality finished product and customer service. We pride ourselves on delivering with assurance and credibility, a finished product, on or before our completion date. We will continue to increase the presence of our infrastructure and projects in the wonderful city of Mazatlán, Sinaloa.
+                    </Typography>
+                </Grid>
+            </Grid>
         </Container>
+        <Projects />
       </main>
+      <Container>
+        <Contact />
+      </Container>
       <Footer />
     </ThemeProvider>
   );

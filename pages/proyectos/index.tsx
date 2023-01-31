@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Box, Container, createTheme, Grid, Paper, styled, ThemeProvider, Typography } from '@mui/material';
 import MainMenu from '../../components/menu/menu';
 import CssBaseline from '@mui/material/CssBaseline'
+import ProjectsPage from '../../components/projects/projects';
 
 export default function Projects() {
 
@@ -19,27 +20,7 @@ export default function Projects() {
             <CssBaseline />
             <MainMenu />
             <main>
-                <Container disableGutters>
-                    <Grid container spacing={2}>
-                        <Grid item md={12}>
-                            <Item>
-                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, voluptate. Minima fuga blanditiis vel in consequuntur dolorum, quis facilis excepturi dolor nesciunt unde ad commodi modi ratione, qui, assumenda voluptates!
-                            </Item>
-                        </Grid>
-                    </Grid>
-                    <Grid container spacing={1}>
-                        <Grid item md={6}>
-                            <Item>
-                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, voluptate. Minima fuga blanditiis vel in consequuntur dolorum, quis facilis excepturi dolor nesciunt unde ad commodi modi ratione, qui, assumenda voluptates!
-                            </Item>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Item>
-                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, voluptate. Minima fuga blanditiis vel in consequuntur dolorum, quis facilis excepturi dolor nesciunt unde ad commodi modi ratione, qui, assumenda voluptates!
-                            </Item>
-                        </Grid>
-                    </Grid>
-                </Container>
+                <ProjectsPage />
             </main>
         </ThemeProvider>
     );
