@@ -8,6 +8,7 @@ import { useRouter } from 'next/router'
 import data from '../api/data'
 import Image from 'next/image'
 import 'swiper/css';
+import HeadTag from '../../components/headTag/headTag'
 
 export default function Project() {
     const router = useRouter();
@@ -17,6 +18,7 @@ export default function Project() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
+            <HeadTag title={project?.title ? project?.title : 'Proyecto - El Encanto'} />
             <MainMenu />
             <main>
                 <Container disableGutters>

@@ -3,6 +3,7 @@ import { Box, Container, createTheme, Grid, Paper, styled, ThemeProvider, Typogr
 import MainMenu from '../../components/menu/menu';
 import CssBaseline from '@mui/material/CssBaseline'
 import ProjectsPage from '../../components/projects/projects';
+import HeadTag from '../../components/headTag/headTag';
 
 export default function Projects() {
 
@@ -18,6 +19,7 @@ export default function Projects() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
+            <HeadTag title='Proyectos - El Encanto' />
             <MainMenu />
             <main>
                 <ProjectsPage />

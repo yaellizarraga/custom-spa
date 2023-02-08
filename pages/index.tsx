@@ -9,6 +9,8 @@ import Contact from '../components/contactForm/contact'
 import Projects from '../components/projects/projects'
 import { Container } from '@mui/system'
 import { Grid, Typography } from '@mui/material'
+import Head from 'next/head'
+import HeadTag from '../components/headTag/headTag'
 
 const items = [
   {
@@ -30,6 +32,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <HeadTag title='Inicio - El Encanto' />
       <MainMenu />
       <main>
         {/* Hero unit */}
@@ -71,11 +74,11 @@ export default function Home() {
             </Grid>
         </Container>
         <Projects />
-      </main>
-      <Container>
-        <Contact />
-      </Container>
+        <Container>
+          <Contact />
+        </Container>
       <Footer />
+      </main>
     </ThemeProvider>
   );
 }
