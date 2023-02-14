@@ -3,7 +3,6 @@ import { Container, Grid, Card, CardMedia, CardContent, CardActions, Typography,
 import { Fade } from 'react-awesome-reveal'
 import Proyects from '../../pages/api/data'
 import { useRouter } from 'next/router'
-import Footer from '../footer/footer'
 
 export default function Projects() {
 
@@ -17,11 +16,20 @@ export default function Projects() {
     return (
         <ThemeProvider theme={theme}>
             <main>
-                <Container sx={{ py: 8 }} maxWidth="md">
+                <Container disableGutters>
+                    <Grid container direction='row' mb={7} mt={7}>
+                        <Grid item md={12}>
+                            <Typography variant='h1' align='left'>
+                                 Proyectos
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Container>
+                <Container disableGutters>
                 {/* End hero unit */}
                 <Grid container spacing={4} mb={5}>
                     {Proyects.map((proyect, index) => (
-                    <Grid item key={index} xs={12} sm={6} md={4}>
+                    <Grid item key={index} xs={12} sm={6} md={6}>
                         <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                         >
@@ -31,7 +39,7 @@ export default function Projects() {
                             // 16:9
                             pt: '10%',
                             }}
-                            image="https://source.unsplash.com/random"
+                            image={proyect.mainImg ? proyect.mainImg : 'https://source.unsplash.com/random'}
                             alt="random"
                         />
                         <CardContent sx={{ flexGrow: 1 }}>

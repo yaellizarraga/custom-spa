@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, Card, CardContent, Grid, InputAdornment, TextField, Typography } from '@mui/material'
+import { Button, Card, CardContent, Container, Grid, InputAdornment, TextField, Typography } from '@mui/material'
 import { Email } from '@mui/icons-material'
 import emailjs from '@emailjs/browser'
 import DialogModal from '../dialog/dialog'
@@ -41,51 +41,54 @@ export default function Contact() {
 
     return (
         <form ref={form} onSubmit={sendEmail}>
+            <Container disableGutters>
+                <Grid container direction='row' mb={7} mt={7}>
+                    <Grid item md={12}>
+                        <Typography variant='h1' align='left'>
+                            Contactanos
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </Container>
             <Card>
                 <CardContent>
                     <Grid container direction='row' spacing={4}>
-                        <Grid item md={12}>
-                            <Typography variant='h3' align='center'>
-                                Contactanos
-                            </Typography>
+                        <Grid item md={6}>
+                            <TextField type='text' name='fromName' variant='standard' label='Nombre' value={nombre} fullWidth/>
                         </Grid>
-                        
-                            <Grid item md={6}>
-                                <TextField type='text' name='fromName' variant='standard' label='Nombre' value={nombre} fullWidth/>
-                            </Grid>
-                            <Grid item md={6}>
-                                <TextField type='text' name='fromSubject' variant='standard' label='Asunto' value={asunto} fullWidth/>
-                            </Grid>
-                            <Grid item md={12}>
-                                <TextField 
-                                type='text' 
-                                variant='standard' 
-                                label='Correo'
-                                name='fromEmail'
-                                InputProps={{
-                                    startAdornment: (
-                                    <InputAdornment position="start">
-                                        <Email />
-                                    </InputAdornment>
-                                    ),
-                                }} 
-                                value={email}
-                                fullWidth/>
-                            </Grid>
-                            <Grid item md={12}>
-                            <TextField
-                                id="outlined-multiline-static"
-                                label="Mensaje"
-                                name='fromMessage'
-                                multiline
-                                rows={5}
-                                value={mensaje}
-                                fullWidth
-                                />
-                            </Grid>
-                            <Grid item md={6}>
-                                <Button type='submit' variant="contained">Enviar</Button>
-                            </Grid>
+                        <Grid item md={6}>
+                            <TextField type='text' name='fromSubject' variant='standard' label='Asunto' value={asunto} fullWidth/>
+                        </Grid>
+                        <Grid item md={12}>
+                            <TextField 
+                            type='text' 
+                            variant='standard' 
+                            label='Correo'
+                            name='fromEmail'
+                            InputProps={{
+                                startAdornment: (
+                                <InputAdornment position="start">
+                                    <Email />
+                                </InputAdornment>
+                                ),
+                            }} 
+                            value={email}
+                            fullWidth/>
+                        </Grid>
+                        <Grid item md={12}>
+                        <TextField
+                            id="outlined-multiline-static"
+                            label="Mensaje"
+                            name='fromMessage'
+                            multiline
+                            rows={5}
+                            value={mensaje}
+                            fullWidth
+                            />
+                        </Grid>
+                        <Grid item md={6}>
+                            <Button type='submit' variant="contained">Enviar</Button>
+                        </Grid>
                     </Grid>
                 </CardContent>
             </Card>

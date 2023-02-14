@@ -50,7 +50,7 @@ export default function Home() {
         <Container disableGutters>
             <Grid container direction='row' mb={7} mt={7}>
                 <Grid item md={12}>
-                    <Typography variant='h1' align='center'>
+                    <Typography variant='h1' align='left'>
                         Acerca de nosotros
                     </Typography>
                 </Grid>
