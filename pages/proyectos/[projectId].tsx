@@ -61,7 +61,7 @@ export default function Project() {
                                 </Swiper>
                             </Grid>
                             <Grid item md={6} sm={12}>
-                                <Typography variant='body1'>
+                                <Typography variant='body1' align='justify'>
                                     {project.description}
                                 </Typography>
                             </Grid>

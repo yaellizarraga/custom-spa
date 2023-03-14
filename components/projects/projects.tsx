@@ -46,7 +46,7 @@ export default function Projects() {
                             <Typography gutterBottom variant="h5" component="h2">
                             {proyect.title}
                             </Typography>
-                            <Typography>
+                            <Typography align='justify'>
                             <Fade>
                                 {proyect.shortDescription}
                             </Fade>
