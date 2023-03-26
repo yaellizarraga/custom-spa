@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Box, createTheme, styled, ThemeProvider } from '@mui/material';
 import MainMenu from '../../components/menu/menu';
 import CssBaseline from '@mui/material/CssBaseline'
+import ServicesPage from '../../components/services/services';
 import ProjectsPage from '../../components/projects/projects';
 import HeadTag from '../../components/headTag/headTag';
 
@@ -22,6 +23,7 @@ export default function Projects() {
             <HeadTag title='Proyectos - El Encanto' />
             <MainMenu />
             <main>
+                <ServicesPage />
                 <ProjectsPage />
             </main>
         </ThemeProvider>

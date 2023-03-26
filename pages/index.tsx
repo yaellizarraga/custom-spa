@@ -6,10 +6,9 @@ import MainMenu from '../components/menu/menu'
 import Footer from '../components/footer/footer'
 import Carousel from 'react-material-ui-carousel'
 import Contact from '../components/contactForm/contact'
-import Projects from '../components/projects/projects'
+import Services from '../components/services/services'
 import { Container } from '@mui/system'
 import { Grid, Typography } from '@mui/material'
-import Head from 'next/head'
 import HeadTag from '../components/headTag/headTag'
 
 const items = [
@@ -73,7 +72,7 @@ export default function Home() {
                 </Grid>
             </Grid>
         </Container>
-        <Projects />
+        <Services />
         <Container>
           <Contact />
         </Container>
