@@ -44,7 +44,7 @@ export default function Contact() {
             <Container disableGutters>
                 <Grid container direction='row' mb={7} mt={7}>
                     <Grid item md={12}>
-                        <Typography variant='h1' align='left'>
+                        <Typography className='title-encanto' variant='h1' align='left'>
                             Contactanos
                         </Typography>
                     </Grid>
@@ -87,7 +87,7 @@ export default function Contact() {
                             />
                         </Grid>
                         <Grid item md={6}>
-                            <Button type='submit' variant="contained">Enviar</Button>
+                            <Button type='submit' variant="contained" className='btn-encanto'>Enviar</Button>
                         </Grid>
                     </Grid>
                 </CardContent>

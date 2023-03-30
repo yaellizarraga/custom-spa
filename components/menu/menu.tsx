@@ -14,7 +14,7 @@ export default function MainMenu() {
 
   const pages = [
     {text: 'inicio', route: '/' }, 
-    {text: 'Servicios', route: '/servicios' }, 
+    {text: 'El Encanto', route: '/proyectos' }, 
     {text: 'Contactanos', route: '/contacto' }];
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);

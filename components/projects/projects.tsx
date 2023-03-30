@@ -19,7 +19,7 @@ export default function Projects() {
                 <Container disableGutters>
                     <Grid container direction='row' mb={7} mt={7}>
                         <Grid item md={12}>
-                            <Typography variant='h1' align='left'>
+                            <Typography className='title-encanto' variant='h1' align='left'>
                                  Proyectos
                             </Typography>
                         </Grid>

@@ -40,6 +40,7 @@ export default function Home() {
             {
               items.map((item, index) => (
                 <div className={'image-container'} key={index}>
+                  <p className='slider-text'>MR. EXPERTOS</p>
                   <img src={item.src} alt={item.alt} className={'image'} />
                 </div>
               ))
@@ -49,7 +50,7 @@ export default function Home() {
         <Container disableGutters>
             <Grid container direction='row' mb={7} mt={7}>
                 <Grid item md={12}>
-                    <Typography variant='h1' align='left'>
+                    <Typography className='title-encanto' variant='h1' align='left'>
                         Acerca de nosotros
                     </Typography>
                 </Grid>

@@ -18,6 +18,20 @@ a {
 .image-container {
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.slider-text {
+  position: absolute;
+  z-index: 99;
+  color: white;
+  font-size: 120pt;
+  text-shadow: -1px 3px 3px #9f9931,
+				  3px 3px 3px #9f9931,
+				  3px -1px 0 #9f9931,
+				  -1px -1px 0 #9f9931;
 }
 
 .image-container > div {
@@ -33,6 +47,16 @@ a {
 
 .logo-encanto {
   max-height: 55px;
+}
+
+.btn-encanto {
+  color: white;
+  font-weight: bold;
+  background-color: #9f9931;
+}
+
+.title-encanto {
+  color: #9f9931;
 }
 
 
