@@ -43,7 +43,7 @@ export default function MainMenu() {
             textDecoration: 'none',
           }}
           >
-            <img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto' />
+            <img src="/logo.png" alt="el-encanto-logo" className='logo-encanto' />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -97,9 +97,9 @@ export default function MainMenu() {
                 textDecoration: 'none',
               }}
             >
-              <img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto' />
+              <img src="/logo.png" alt="el-encanto-logo" className='logo-encanto' />
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'right' }}>
               {pages.map((page, index) => (
                 <Link href={page.route}>
                   <Button

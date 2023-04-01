@@ -17,7 +17,7 @@ a {
 
 .image-container {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   align-items: center !important;
   justify-content: center !important;
@@ -39,14 +39,14 @@ a {
 }
 
 .image-container > .image {
-  object-fit: contain;
+  object-fit:fill;
   width: 100% !important;
   position: relative !important;
   height: unset !important;
 }
 
 .logo-encanto {
-  max-height: 55px;
+  max-height: 65px;
 }
 
 .btn-encanto {

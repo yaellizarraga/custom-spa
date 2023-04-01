@@ -13,7 +13,7 @@ import HeadTag from '../components/headTag/headTag'
 
 const items = [
   {
-      src: "/business_center.png",
+      src: "/logomrexpertos.jpg",
       alt: "Imagen 1",
       key:1
   },
@@ -40,7 +40,7 @@ export default function Home() {
             {
               items.map((item, index) => (
                 <div className={'image-container'} key={index}>
-                  <p className='slider-text'>MR. EXPERTOS</p>
+                  {/*<p className='slider-text'>MR. EXPERTOS</p>*/}
                   <img src={item.src} alt={item.alt} className={'image'} />
                 </div>
               ))
