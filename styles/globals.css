@@ -49,6 +49,11 @@ a {
   max-height: 65px;
 }
 
+.logo-encanto-bgr {
+  max-width: 60%;
+  height: auto;
+}
+
 .btn-encanto {
   color: white;
   font-weight: bold;

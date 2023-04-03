@@ -3,6 +3,7 @@ import { Container, Grid, Card, CardMedia, CardContent, CardActions, Typography,
 import { Fade } from 'react-awesome-reveal'
 import Proyects from '../../pages/api/data'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 export default function Projects() {
 
@@ -18,9 +19,14 @@ export default function Projects() {
             <main>
                 <Container disableGutters>
                     <Grid container direction='row' mb={7} mt={7}>
-                        <Grid item md={12}>
+                        <Grid item md={6}>
                             <Typography className='title-encanto' variant='h1' align='left'>
                                  Proyectos
+                            </Typography>
+                        </Grid>
+                        <Grid item md={6}>
+                            <Typography className='title-encanto' variant='h1' align='right'>
+                                <img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto-bgr' />
                             </Typography>
                         </Grid>
                     </Grid>
