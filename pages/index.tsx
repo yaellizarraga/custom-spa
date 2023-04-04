@@ -1,7 +1,7 @@
 import * as React from 'react'
 import CssBaseline from '@mui/material/CssBaseline'
 import Box from '@mui/material/Box'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles'
 import MainMenu from '../components/menu/menu'
 import Footer from '../components/footer/footer'
 import Carousel from 'react-material-ui-carousel'
@@ -24,7 +24,8 @@ const items = [
   }
 ]
 
-const theme = createTheme();
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 export default function Home() {
 

@@ -1,14 +1,15 @@
 import * as React from 'react'
-import { Container, Grid, Card, CardMedia, CardContent, CardActions, Typography, Button, ThemeProvider, createTheme } from '@mui/material'
+import { Container, Grid, Card, CardMedia, CardContent, CardActions, Typography, Button, ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material'
 import { Fade } from 'react-awesome-reveal'
 import Proyects from '../../pages/api/data'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Projects() {
 
     const router = useRouter();
-    const theme = createTheme();
+    let theme = createTheme();
+    theme = responsiveFontSizes(theme);
     
     const goToProject = (id: number) => {
         router.push('/proyectos/' + id.toString())
@@ -26,7 +27,7 @@ export default function Projects() {
                         </Grid>
                         <Grid item md={6}>
                             <Typography className='title-encanto' variant='h1' align='right'>
-                                <img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto-bgr' />
+                                <Link href={'https://www.elencantodesarrollos.com/'} target={'_blank'}><img src="/bussines.png" alt="el-encanto-logo" className='logo-encanto-bgr' /></Link>
                             </Typography>
                         </Grid>
                     </Grid>

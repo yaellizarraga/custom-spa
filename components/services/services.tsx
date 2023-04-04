@@ -18,7 +18,6 @@ export default function Projects() {
     
     return (
         <ThemeProvider theme={theme}>
-            <main>
                 <Container disableGutters>
                     <Grid container direction='row' mb={7} mt={7}>
                         <Grid item md={12}>
@@ -125,7 +124,6 @@ export default function Projects() {
                     </Grid>
                 </Grid>
                 </Container>
-            </main>
         </ThemeProvider>
     )
 }

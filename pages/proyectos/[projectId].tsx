@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Box, Container, createTheme, Grid, ThemeProvider, Typography } from '@mui/material'
+import { Box, Container, createTheme, Grid, responsiveFontSizes, ThemeProvider, Typography } from '@mui/material'
 import MainMenu from '../../components/menu/menu'
 import Footer from '../../components/footer/footer'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -12,7 +12,8 @@ import HeadTag from '../../components/headTag/headTag'
 
 export default function Project() {
     const router = useRouter();
-    const theme = createTheme();
+    let theme = createTheme();
+    theme = responsiveFontSizes(theme);
     const { projectId } = router.query;
     const project = data.find(project => project.id.toString() == projectId)
     return (
@@ -21,7 +22,7 @@ export default function Project() {
             <HeadTag title={project?.title ? project?.title : 'Proyecto - El Encanto'} />
             <MainMenu />
             <main>
-                <Container disableGutters>
+                <Container>
                     {typeof project != 'undefined' ? 
                     <Grid container>
                         <Grid container 
@@ -75,7 +76,7 @@ export default function Project() {
                             {project.googleMaps ?
                                 <Grid container spacing={4} pb={5} pt={5}>
                                     <Grid item md={12} sm={12}>
-                                        <iframe src={project.googleMaps}  style={{ width: '100%', height: '80vh' }} loading="lazy"></iframe>
+                                        <iframe src={project.googleMaps} className="iframe-encanto" loading="lazy"></iframe>
                                     </Grid>
                                 </Grid> : <div></div>
                             }

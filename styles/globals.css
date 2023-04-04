@@ -64,6 +64,17 @@ a {
   color: #9f9931;
 }
 
+.iframe-wrapper {
+  position: relative;
+}
+
+.iframe-encanto {
+  position: absolute;
+  left: 0;
+  align-self: center;
+  width: 100%;
+  height: 50vh;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

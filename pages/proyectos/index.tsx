@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, createTheme, styled, ThemeProvider } from '@mui/material';
+import { Box, Container, createTheme, styled, ThemeProvider } from '@mui/material';
 import MainMenu from '../../components/menu/menu';
 import CssBaseline from '@mui/material/CssBaseline'
 import ProjectsPage from '../../components/projects/projects';
@@ -21,9 +21,9 @@ export default function Projects() {
             <CssBaseline />
             <HeadTag title='Proyectos - El Encanto' />
             <MainMenu />
-            <main>
+            <Container>
                 <ProjectsPage />
-            </main>
+            </Container>
         </ThemeProvider>
     );
 }
