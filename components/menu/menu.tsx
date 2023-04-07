@@ -1,9 +1,7 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import AdbIcon from '@mui/icons-material/Adb';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import { Box, IconButton, MenuItem, Button, createTheme } from '@mui/material';
@@ -15,7 +13,7 @@ export default function MainMenu() {
   const pages = [
     {text: 'inicio', route: '/' }, 
     {text: 'El Encanto', route: '/proyectos' }, 
-    {text: 'Contactanos', route: '/contacto' }];
+    {text: 'Contáctanos', route: '/contacto' }];
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 

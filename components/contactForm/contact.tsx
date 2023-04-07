@@ -45,7 +45,7 @@ export default function Contact() {
                 <Grid container direction='row' mb={7} mt={7}>
                     <Grid item md={12}>
                         <Typography className='title-encanto' variant='h1' align='left'>
-                            Contactanos
+                            Contáctanos
                         </Typography>
                     </Grid>
                 </Grid>

@@ -84,7 +84,6 @@ export default function Project() {
                     </Grid>: <div></div>}
                 </Container>
             </main>
-            <Footer />
         </ThemeProvider>
     );
 }
