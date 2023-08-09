@@ -1,18 +1,20 @@
 import * as React from 'react'
 import { Container, Grid, Card, CardMedia, CardContent, CardActions, Typography, Button, ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material'
 import { Fade } from 'react-awesome-reveal'
-import Proyects from '../../pages/api/data'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import IProjects from '../../pages/models/interfaces/project'
+import Pages from '../../pages/models/pagesEnum'
 
-export default function Projects() {
+export default function Projects(props: { projects: IProjects[], page?: Pages }) {
 
     const router = useRouter();
     let theme = createTheme();
     theme = responsiveFontSizes(theme);
     
-    const goToProject = (id: number) => {
-        router.push('/proyectos/' + id.toString())
+    const goToProject = (id: number, page?: Pages) => {
+        let route = (page && page == Pages.Encanto) ? '/proyectos/' : '/proyectos_externos/'
+        router.push(route + id.toString())
     }
     
     return (
@@ -35,7 +37,7 @@ export default function Projects() {
                 <Container disableGutters>
                 {/* End hero unit */}
                 <Grid container spacing={4} mb={5}>
-                    {Proyects.map((proyect, index) => (
+                    {props.projects.map((proyect, index) => (
                     <Grid item key={index} xs={12} sm={6} md={6}>
                         <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
@@ -60,7 +62,7 @@ export default function Projects() {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small" onClick={() => goToProject(proyect.id)}>Ver Proyecto</Button>
+                            <Button size="small" onClick={() => goToProject(proyect.id, props.page)}>Ver Proyecto</Button>
                         </CardActions>
                         </Card>
                     </Grid>

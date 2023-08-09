@@ -11,8 +11,9 @@ import Link from 'next/link';
 export default function MainMenu() {
 
   const pages = [
-    {text: 'inicio', route: '/' }, 
-    {text: 'El Encanto', route: '/proyectos' }, 
+    {text: 'Inicio', route: '/' }, 
+    {text: 'El Encanto', route: '/proyectos' },
+    {text: 'Proyectos', route:'/proyectos_externos' }, 
     {text: 'Contáctanos', route: '/contacto' }];
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);

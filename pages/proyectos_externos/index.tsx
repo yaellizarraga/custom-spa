@@ -4,7 +4,7 @@ import MainMenu from '../../components/menu/menu';
 import CssBaseline from '@mui/material/CssBaseline'
 import ProjectsPage from '../../components/projects/projects';
 import HeadTag from '../../components/headTag/headTag';
-import ProyectsInfo from '../api/data';
+import ProjectsInfo from '../api/data_externos'
 import Pages from '../models/pagesEnum';
 
 export default function Projects() {
@@ -24,7 +24,7 @@ export default function Projects() {
             <HeadTag title='Proyectos - El Encanto' />
             <MainMenu />
             <Container>
-                <ProjectsPage projects={ProyectsInfo} page={Pages.Encanto}/>
+                <ProjectsPage projects={ProjectsInfo} page={Pages.Externo}/>
             </Container>
         </ThemeProvider>
     );

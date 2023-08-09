@@ -1,4 +1,6 @@
-export default [
+import IProjects from "../models/interfaces/project";
+
+const projects: IProjects[] =  [
     {
         id: 1,
         title: 'EL ENCANTO PLAZA LA MARINA-CONJUNTO HABITACIONAL',
@@ -139,3 +141,5 @@ EL ENCANTO RÍO CUENTA CON UN ESTILO MODERNO Y FUNCIONALISTA, INTEGRANDO DETALLE
         mainImg: ''
     }
 ]
+
+export default projects;
